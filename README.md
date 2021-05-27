@@ -9,11 +9,11 @@
 
 # 样式效果
 
-<div align=center><img align="center" src="https://github.com/zhbi98/iphoto/blob/master/photos/iphoto01.jpg" alt="GitHub" title="GitHub,Social Coding" width="977" height="709"/></div>
+<div align=center><img align="center" src="https://github.com/zhbi98/iphoto/blob/master/photos/iphoto01.jpg" alt="GitHub" title="GitHub,Social Coding" width="682" height="532"/></div>
 
-<div align=center><img align="center" src="https://github.com/zhbi98/iphoto/blob/master/photos/iphoto02.jpg" alt="GitHub" title="GitHub,Social Coding" width="977" height="709"/></div>
+<div align=center><img align="center" src="https://github.com/zhbi98/iphoto/blob/master/photos/iphoto02.jpg" alt="GitHub" title="GitHub,Social Coding" width="841" height="553"/></div>
 
-<div align=center><img align="center" src="https://github.com/zhbi98/iphoto/blob/master/photos/iphoto03.jpg" alt="GitHub" title="GitHub,Social Coding" width="977" height="709"/></div>
+<div align=center><img align="center" src="https://github.com/zhbi98/iphoto/blob/master/photos/iphoto03.jpg" alt="GitHub" title="GitHub,Social Coding" width="841" height="553"/></div>
 
 
 # 运行环境
