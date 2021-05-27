@@ -1,4 +1,4 @@
-﻿
+
 # -*- coding: utf-8 -*-
 
 
@@ -11,7 +11,7 @@ from PIL import ImageTk
 import message
 
 
-fonts = '微软雅黑', 10
+fonts = 'Arial', 10
 window = tkinter.Tk()
 
 menumodel = 'normal'
@@ -71,112 +71,112 @@ class MenuBar(object):
 		fileoption = tkinter.Menu(self.menubar, 
 								  tearoff=0)
 		
-		fileoption.add_command(label=' 新建文件 ', 
+		fileoption.add_command(label=' New ', 
 							   accelerator='Ctrl+N',
 							   command=newImage,
 							   font=(fonts))
 
-		fileoption.add_command(label=' 打开图片... ', 
+		fileoption.add_command(label=' Open... ', 
 							   accelerator='Ctrl+O', 
 							   command=openDialog, 
 							   font=(fonts))
 
-		fileoption.add_command(label=' 保存图片 ', 
-							   accelerator='Ctrl+S',
+		fileoption.add_command(label=' Save  Image ', 
+							   # acceleratoOpenr='Ctrl+S',
 							   command=saveAsPhoto,
 							   state=menumodel, 
 							   font=(fonts))
 		fileoption.add_separator()
-		fileoption.add_command(label=' 退出 ', 
-							   command=quit, 
+		fileoption.add_command(label=' Exit ', 
+							   # command=quit, 
 							   font=(fonts))
 
-		self.menubar.add_cascade(label=' 文件 ', 
+		self.menubar.add_cascade(label=' File ', 
 								 menu=fileoption)
 	def editBar(self):
 		editoption = tkinter.Menu(self.menubar, tearoff=0)
-		editoption.add_command(label=' 撤销 ', 
+		editoption.add_command(label=' Undo ', 
 							   accelerator='Ctrl+Z',
 							   state=menumodel, 
 							   font=(fonts))
 
-		editoption.add_command(label=' 重做 ', 
+		editoption.add_command(label=' Redo ', 
 							   accelerator='Ctrl+Y',
 							   state=menumodel, 
 							   font=(fonts))
 
 		editoption.add_separator()
-		editoption.add_command(label=' 剪切 ', 
+		editoption.add_command(label=' Cut ', 
 							   accelerator='Ctrl+X',
 							   state=menumodel, 
 							   font=(fonts))
 
-		editoption.add_command(label=' 复制 ', 
+		editoption.add_command(label=' Copy ', 
 							   accelerator='Ctrl+C',
 							   state=menumodel, 
 							   font=(fonts))
 		
-		editoption.add_command(label=' 粘贴 ', 
+		editoption.add_command(label=' Paste ', 
 							   accelerator='Ctrl+V',
 							   state=menumodel, 
 							   font=(fonts))
 
-		self.menubar.add_cascade(label=' 编辑 ', 
+		self.menubar.add_cascade(label=' Edit ', 
 								 menu=editoption)
 	def imageBar(self):
 		image = tkinter.Menu(self.menubar, tearoff=0)
 
 		_filter = tkinter.Menu(image, tearoff=0)
-		_filter.add_command(label=' 自然 ',
+		_filter.add_command(label=' Natural ',
 							command=natureImage,  
 							font=(fonts))
-		_filter.add_command(label=' 高斯模糊 ',  
+		_filter.add_command(label=' Gaussian Blur ',  
 							font=(fonts))
 
-		_filter.add_command(label=' 查找边缘 ', 
+		_filter.add_command(label=' Find edge ', 
 							font=(fonts))
 		_filter.add_separator()
-		_filter.add_command(label=' 边缘增强 ',  
+		_filter.add_command(label=' Edge enhancement ',  
 							font=(fonts))
 
-		_filter.add_command(label=' 锐化 ',  
+		_filter.add_command(label=' Sharpen ',  
 							font=(fonts))
-		image.add_cascade(label=' 图像滤镜... ', 
+		image.add_cascade(label=' Image filter... ', 
 						  font=(fonts),
 						  menu=_filter)
 
 		_color = tkinter.Menu(image, tearoff=0)
-		_color.add_command(label=' 自然 ',
+		_color.add_command(label=' Natural ',
 							command=natureImage, 
 							font=(fonts))
-		_color.add_command(label=' 变暗 ',  
+		_color.add_command(label=' Darken ',  
 						   font=(fonts))
-		_color.add_command(label=' 变亮 ', 
+		_color.add_command(label=' Brighten ', 
 						   font=(fonts))
 		_color.add_separator()
-		_color.add_command(label=' 反色 ',  
+		_color.add_command(label=' Reverse ',  
 						   font=(fonts))
 
-		_color.add_command(label=' 灰度填充 ',
+		_color.add_command(label=' Gray fill ',
 						   command=photoGray,  
 						   font=(fonts))
-		image.add_cascade(label=' 图像色彩... ',
+		image.add_cascade(label=' Image color... ',
 						  font=(fonts), 
 						  menu=_color)
-		self.menubar.add_cascade(label=' 图像 ', menu=image)
+		self.menubar.add_cascade(label=' Image ', menu=image)
 
 	def viewBar(self):
 		view = tkinter.Menu(self.menubar, tearoff=0)
-		view.add_command(label=' 图片放大 ', 
+		view.add_command(label=' Zoom In ', 
 						 command=Zoom.zoomIn,
 						 font=(fonts))
-		view.add_command(label=' 图片缩小 ',
+		view.add_command(label=' Zoom Out ',
 						 command=Zoom.zoomOut,
 						 font=(fonts))
-		view.add_command(label=' 实际大小 ',
+		view.add_command(label=' Actual size ',
 						 command=Zoom.fullSize,  
 						 font=(fonts))
-		self.menubar.add_cascade(label=' 查看 ', 
+		self.menubar.add_cascade(label=' View ', 
 								 menu=view)
 	def windowBar(self):
 		_window = tkinter.Menu(self.menubar, tearoff=0)
@@ -186,16 +186,16 @@ class MenuBar(object):
 							font=(fonts))
 		_window.add_command(label=' 1920x1080 ', 
 							font=(fonts))
-		_window.add_command(label=' 全屏 ', 
+		_window.add_command(label=' Full Screen ', 
 							command=fullScreen,
 							font=(fonts))
-		self.menubar.add_cascade(label=' 窗口 ', 
+		self.menubar.add_cascade(label=' Window ', 
 								 menu=_window)
 	def helpBar(self):
 		_window = tkinter.Menu(self.menubar, tearoff=0)
 		_window.add_command(label=' Help... ', 
 							font=(fonts))
-		self.menubar.add_cascade(label=' 帮助 ', 
+		self.menubar.add_cascade(label=' Help ', 
 								 menu=_window)
 def openDialog():
 	menumodel = 'normal'
@@ -210,7 +210,7 @@ def openDialog():
 
 def saveAsDialog():
 	global filename
-	saveasimage = tkinter.filedialog.asksaveasfilename(title='Mojave 图片保存为', 
+	saveasimage = tkinter.filedialog.asksaveasfilename(title='Mojave Save As', 
 													   initialdir=r'C:\ Mojave', 
 													   filetypes=[('All Files', '*'), 
 													   ('Photos', '*.jpg *.png')], 

@@ -11,7 +11,7 @@ class MessageBox(object):
 		self.message = message
 
 	def aboutPhotos(self):       
-		self.message.showinfo('关于 Mojave', 
+		self.message.showinfo('About Mojave', 
 							  '            Mojave' 
 							  + '\n' + '\n' + '\n' +
 							  'Copyright (C)2001-2019.Python.org' 
@@ -38,31 +38,31 @@ class MessageBox(object):
 
 		title = tkinter.Label(about, text='Photos',  
 							  fg='black', bg='#d3d3d3',
-							  font=('微软雅黑', 20))
+							  font=('Arial', 20))
 		title.place(x=105, y=15)
 
 		information = tkinter.Label(about, text='Copyright ©2019.Python.org'
 									+ '\n' + 
 									'Photos Version 1.0.0',  
 									fg='black', bg='#d3d3d3',
-									font=('微软雅黑', 10))
+									font=('Arial', 10))
 		information.place(x=50, y=80)
 
 		powerbutton = tkinter.Button(about,text='Power', 
 									 width=6, height=1 ,
 									 fg='black', bg='#d3d3d3',
 									 command=power.power, 
-									 font=('微软雅黑', 8))
+									 font=('Arial', 8))
 
 		powerbutton.place(x=40, y=23)
 
 	def printMessage(self):
-		self.message.showerror('Photos 打印', 
-							   '未连接打印设备     ')
+		self.message.showerror('Photos Print', 
+							   'Unconnect printer     ')
 
 	def exitMessage(self):
-		_exit = self.message.askokcancel('Photos 退出',
-										 '退出 Photos')
+		_exit = self.message.askokcancel('Photos Exit',
+										 'Exit Photos')
 		if _exit == True:
 			quit()
 

@@ -24,7 +24,7 @@ def power():
 
     title = tkinter.Label(power, text='Support',  
                           fg='black', bg='#d3d3d3',
-                          font=('微软雅黑', 20))
+                          font=('Arial', 20))
     title.place(x=140, y=40)
 
     information = tkinter.Label(power, text=
@@ -34,7 +34,7 @@ def power():
                                 + '\n' + 
                                 'Power by Python', 
                                 fg='black', bg='#d3d3d3',
-                                font=('微软雅黑', 12))
+                                font=('Arial', 12))
 
     information.place(x=50, y=170)
  
