@@ -7,6 +7,15 @@
 本项目是使用 python 所开发的一个照片查看器。
 
 
+# 样式效果
+
+<div align=center><img align="center" src="https://github.com/zhbi98/iphoto/blob/master/photos/iphoto01.jpg" alt="GitHub" title="GitHub,Social Coding" width="977" height="709"/></div>
+
+<div align=center><img align="center" src="https://github.com/zhbi98/iphoto/blob/master/photos/iphoto02.jpg" alt="GitHub" title="GitHub,Social Coding" width="977" height="709"/></div>
+
+<div align=center><img align="center" src="https://github.com/zhbi98/iphoto/blob/master/photos/iphoto03.jpg" alt="GitHub" title="GitHub,Social Coding" width="977" height="709"/></div>
+
+
 # 运行环境
 
 本项目使用 Anconda python 集成开发环境开发，使用 Anconda 可以不需要考虑一些依赖包的安装。当然也可以直接安装
