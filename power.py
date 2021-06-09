@@ -18,23 +18,20 @@ def power():
     power.transient(message.about)
     power.iconbitmap('./iphoto_icon.ico')
 
-    background = tkinter.Label(power, width=400, 
-                               height=299, bg='#d3d3d3')
+    background = tkinter.Label(power, width=400, height=299, bg='#d3d3d3')
     background.pack()
 
-    title = tkinter.Label(power, text='Support',  
-                          fg='black', bg='#d3d3d3',
-                          font=('Arial', 20))
+    title = tkinter.Label(power, text='Support', fg='black', bg='#d3d3d3', font=('Arial', 20))
     title.place(x=140, y=40)
 
-    information = tkinter.Label(power, text=
-                                'Designed by Photos Support in China'
-                                +'\n' + 
-                                'Copyright ©2019.Python.org'
-                                + '\n' + 
-                                'Power by Python', 
-                                fg='black', bg='#d3d3d3',
-                                font=('Arial', 12))
+    information = tkinter.Label(power, 
+        text='Designed by Photos Support in China'
+        +'\n' + 
+        'Copyright ©2019.Python.org'
+        + '\n' + 
+        'Power by Python', 
+        fg='black', bg='#d3d3d3',
+        font=('Arial', 12))
 
     information.place(x=50, y=170)
  

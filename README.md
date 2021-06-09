@@ -22,7 +22,7 @@
 python 官方开发的 IDLE 来运行本项目，本项目所使用的都是基于 python 内部已有的包，所以你并不需要再安装其余的扩展
 包，所以 python 官方开发的 IDLE 可以直接运行本项目。运行本项目只需将 iphoto.py 载入 python IDLE 或 Anconda 直接运行即可。
 
-- [pyhon下载](https://www.python.org/downloads/)
+- [python下载](https://www.python.org/downloads/)
 - [Anconda下载](https://anaconda.en.softonic.com/)
 
 
